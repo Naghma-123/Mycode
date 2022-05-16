@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<style>
+    
+    #button{
+        width: 18.5%;
+        height: 40px;
+        border:1px solid black;
+        border-radius: 4px;
+        font-size: 20px;
+        color:black;
+        background-color: aliceblue;
+
+    }
+    #button:hover{
+        width:25%;
+        background-color: aliceblue;
+        border:none;
+        
+        
+    }
+    select{
+        width: 40%;
+        background-color: aliceblue;
+    }
+    textarea{
+        background-color: aliceblue;
+           
+    }
+     #back{
+         text-align: center;
+         border: 1px solid purple;
+         font-size:large;
+         line-height: 40px;
+         background-color:rgb(168, 113, 168);
+         color: aliceblue;
+     }
+     .wid{
+         width: 40%;
+         background-color: aliceblue;
+        height: 35px;
+     }
+     #gen{
+        width: 75%;
+
+     }
+     
+    
+</style>
+<body>
+    <form id="back">
+        <p >Name:
+        <input type="name" placeholder="Enter Name" class="wid">
+        </p>
+        <p >Email:
+        <input type="email" placeholder="Email Id" class="wid">
+        </p>
+        <p>Password:
+        <input type="password" placeholder="Password" class="wid">
+        </p>
+        <p>Phone:
+        <input type="Phone number" placeholder="Contact Number" class="wid"><br>
+        </p>
+        <p id="gen">Gender:
+        <label for="101">
+            <input type="radio" value="male" name="class" id="101">Male
+            </label>
+            
+            
+            <label for="102">
+            <input type="radio" value="female" name="class" id="102">Female
+            </label>
+            <label for="103">
+                <input type="radio" value="other" name="class" id="103">Other
+                </label>
+            </p>
+                <p id="language">Select language:
+            <select>
+                <option value="Language">Language</option>
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Urdu">Urdu</option>
+            </select>
+        </p>
+            <p >Zip Code:
+                <input type="code" placeholder="012345" class="wid">
+            </p>
+            <p>
+            <textarea placeholder="About yourself" rows="6" cols="80"  ></textarea>
+            </p>
+            <input type="submit" value="Registration" id="button">
+            
+    </p>
+    </form>
+</body>
+</html>
